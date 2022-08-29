@@ -5,21 +5,6 @@ module.exports = {
         '@storybook/addon-essentials',
         '@storybook/addon-interactions',
         '@storybook/preset-create-react-app',
-        '@storybook/addon-actions',
-        '@storybook/addon-knobs',
-        {
-            name: '@storybook/addon-storysource',
-            options: {
-                rule: {
-                    test: /\.stories\.tsx?$/,
-                    include: [path.resolve(__dirname, '../src')],
-                },
-                loaderOptions: {
-                    injectStoryParameters: false,
-                },
-            },
-        },
-        '@storybook/addon-viewport',
     ],
     framework: '@storybook/react',
     core: {
