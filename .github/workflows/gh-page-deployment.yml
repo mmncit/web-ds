@@ -4,7 +4,7 @@ on:
             - main
         # paths: ['stories/**', 'src/components/**']
 
-name: gh-pages deployment
+name: gh-pages-cd
 
 jobs:
     build-and-deploy:

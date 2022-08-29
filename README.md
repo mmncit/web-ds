@@ -1,7 +1,8 @@
-# web-ds 
+# web-ds
+
 Web Design System
 
-![Build Status](https://github.com/mmncit/web-ds/actions/workflows/gh-page-deployment.yml/badge.svg?branch=master)
+![gh-pages](https://github.com/mmncit/web-ds/actions/workflows/gh-page-deployment.yml/badge.svg?branch=master)
 
 [Storybook Demo](https://mmncit.github.io/web-ds)
 
