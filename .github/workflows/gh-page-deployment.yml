@@ -1,17 +1,14 @@
+name: build and deploy into gh-pages
 on:
     push:
         branches:
             - master
-        paths: ['src/**']
-
-name: gh-pages-cd
-
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout 🛎️
-              uses: actions/checkout@master
+              uses: actions/checkout@v3
             - name: Build Storybook
               run: |
                   npm install
