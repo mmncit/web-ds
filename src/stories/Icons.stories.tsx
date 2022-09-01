@@ -1,8 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
-import { Grid, Typography } from '@mui/material';
-import { GitHubIcon, LinkedInIcon } from '../icons';
-import { GitHub } from '@mui/icons-material';
+import { Grid, Stack, Typography } from '@mui/material';
+import { CodeIcon, EnvelopeIcon, GitHubIcon, LinkedInIcon } from '../icons';
 import { color } from '../styles';
 
 function IconContainer({ Icon, title = '', props }: any) {
@@ -24,12 +23,19 @@ const IconBoard = () => {
         <Grid container>
             <Grid container>
                 <IconHeader title="Brands" />
-                <Grid item container spacing={2}>
+                <Stack spacing={5} direction="row">
                     <IconContainer Icon={LinkedInIcon} props={{ color: '#0A66C2' }} />
                     <IconContainer Icon={LinkedInIcon} props={{ color: color.magenta }} />
-                    <IconContainer Icon={GitHub} />
                     <IconContainer Icon={GitHubIcon} props={{ color: color.magenta }} />
-                </Grid>
+                </Stack>
+                <IconHeader title="Computer Science" />
+                <Stack spacing={5} direction="row">
+                    <IconContainer Icon={CodeIcon} props={{ color: color.dkblue }} />
+                </Stack>
+                <IconHeader title="Contact" />
+                <Stack spacing={5} direction="row">
+                    <IconContainer Icon={EnvelopeIcon} props={{ color: color.plum }} />
+                </Stack>
             </Grid>
         </Grid>
     );
