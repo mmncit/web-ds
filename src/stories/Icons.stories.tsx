@@ -1,7 +1,14 @@
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 import { Grid, Stack, Typography } from '@mui/material';
-import { CodeIcon, EnvelopeIcon, GitHubIcon, LinkedInIcon } from '../icons';
+import {
+    CodeIcon,
+    EnvelopeIcon,
+    GitHubIcon,
+    LinkedInIcon,
+    BLetterIcon,
+    SLetterIcon,
+} from '../icons';
 import { color } from '../styles';
 
 function IconContainer({ Icon, title = '', props }: any) {
@@ -27,6 +34,8 @@ const IconBoard = () => {
                     <IconContainer Icon={LinkedInIcon} props={{ color: '#0A66C2' }} />
                     <IconContainer Icon={LinkedInIcon} props={{ color: color.magenta }} />
                     <IconContainer Icon={GitHubIcon} props={{ color: color.magenta }} />
+                    <IconContainer Icon={BLetterIcon} props={{ color: color.magenta }} />
+                    <IconContainer Icon={SLetterIcon} props={{ color: color.magenta }} />
                 </Stack>
                 <IconHeader title="Computer Science" />
                 <Stack spacing={5} direction="row">
